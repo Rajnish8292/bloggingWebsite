@@ -1,0 +1,93 @@
+
+
+:root {
+    --background-color : #262626;
+    --color-primary: #595959;
+    --color-secondary : #8C8C8C;
+    --color-teritary: #f4f4f4;
+    --color-action: #fff;
+    --color-link: #8cb4ff;
+    --color-error: rgb(255, 81, 81);
+  
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    /* background: var(--background-color); */
+    font-family: "IBM Plex Mono", sans-serif;
+  }
+
+.create-blog-button {
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    padding:15px;
+    background-color: var(--background-color);
+    color: var(--color-teritary);
+    cursor: pointer;
+    user-select: none;
+    border-radius: 60px;
+    /* font-size:22px; */
+}
+
+.create-blog-button:active
+{
+    opacity:0.9
+}
+.blog {
+
+  height: 150px;
+  border: 1px solid var(--color-secondary);
+  width: 400px;
+  overflow: hidden;
+  display: flex;
+  border-radius: 20px ;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+  width: 800px;
+  flex-direction:row ;
+  justify-content: space-between;
+  user-select: none;
+  margin-bottom: 20px;
+}
+.blog-img-wrapper {
+  height: 200px;
+  width: 200px;
+  background: #595959;
+}
+.blog:hover {
+  background-color: #cbcbcb67;
+}
+.blog-title {
+  font-family: "IBM Plex Mono", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  /* background-color: red; */
+  width:500px;
+}
+.blog-date {
+  font-size: 12px;
+  margin-top:10px;
+
+}
+.detail {
+  margin: 30px;
+}
+main {
+  position: absolute;
+  top:0;
+  left:50%;
+  transform: translate(-50% ,0 );
+  height: 100vh;
+  width: 800px;
+  padding:30px 0 30px 0 ;
+  margin-bottom:100px;
+}
+.blog-head {
+  margin-bottom: 40px;
+}

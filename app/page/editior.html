@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM Plex Mono">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/style/editior.css">
+    <title>blog title</title>
+</head>
+<body>
+    <div class="editior">
+        
+        <div class="title">
+            <input type="text" id="blog-title-input" placeholder="Title ...">
+            <div class="add-image-cont">
+                <div class="material-icons add-image">add_a_photo</div>
+            <input type="file" accept="image/*" name="image" id="upload-img">
+            </div>
+            
+        </div>
+        <div class="article">
+            <textarea id="article-input" placeholder="write you blog here"></textarea>
+        </div>
+        <div class="actions">
+            <div class="action-button">publish</div>
+            <div class="back-button">home</div>
+        </div>
+        <div class="overlay" >
+            <span class="overlay-message">publishing ...</span>
+        </div>
+    </div>
+
+    <script src="js/editior.js"></script>
+</body>
+</html>
